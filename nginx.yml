@@ -1,0 +1,15 @@
+apiVersion: V1
+kind: Pod
+metadata:
+  name: Hello-Inginx
+  labels: 
+    name: From-VS
+    OtherName: From-Help
+    Environemnt: Production
+    NameSpace: Development-Lupita
+spec:
+  containers:
+    - name: Container-Name
+      image: nginx
+    - name: busybox
+      image : busybox
